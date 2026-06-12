@@ -1,0 +1,20 @@
+{
+  "name": "pricehunt-backend",
+  "version": "1.0.0",
+  "description": "Backend price comparison service for PriceHunt",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node tests/test_scrapers.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "playwright": "^1.44.1",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.8.3"
+  }
+}
