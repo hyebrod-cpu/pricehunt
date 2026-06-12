@@ -103,6 +103,9 @@ app.get('/api/compare', async (req, res) => {
     });
   }
 });
+app.get('/', (req, res) => {
+  res.send('PriceHunt API is running! Use /api/compare?q=your_search_term to search.');
+});
 
 app.listen(PORT, () => {
   console.log(`PriceHunt backend server running on port ${PORT}`);
